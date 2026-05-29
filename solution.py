@@ -1,3 +1,26 @@
+from findXorRotorsLengths import findXorRotorLengths
+from findXorRotors import findXorRotors
+from findInterchangeRotorsLength import findInterchangeRotorsLength
+from findInterchangeRotors import findInterchangeRotors
+
+def main():
+    XorRotorsLen = findXorRotorLengths()
+    XorRotors = findXorRotors()
+    interchangeRotorsLen = findInterchangeRotorsLength()
+    interchangeRotors = findInterchangeRotors()
+
+    RotorsLen = XorRotorsLen + interchangeRotorsLen
+
+    Rotors = XorRotors + interchangeRotors
+
+
+
+
+
+
+# Results: 
+
+
 XorRotors = [
             [0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1],
             [1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1],
@@ -15,4 +38,10 @@ interchangeRotors = [
             [0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1]
         ]
 
+XorRotorsLen = [67, 61, 73, 59, 64]
+
+interchangeRotorsLen = [47,71,53,65,69]
+
 Rotors = XorRotors + interchangeRotors
+
+RotorsLen = XorRotorsLen + interchangeRotorsLen

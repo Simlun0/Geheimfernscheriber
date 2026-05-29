@@ -85,7 +85,7 @@ class Geheimfernscheriber():
 def main():
     machine = Geheimfernscheriber()
 
-    print(machine.encrypt(msg) == output)
+    print(machine.encrypt(output))
 
 
 
